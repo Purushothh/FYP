@@ -1,0 +1,120 @@
+* {
+    text-decoration: none;
+}
+
+.flex {
+    position: flex;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(109, 13, 13);
+    text-transform: uppercase;
+}
+
+.header {
+    text-align: center;
+}
+
+.searchBar {
+    float: right;
+}
+
+#page1 {
+    margin: 40px 40px 40px 40px;
+}
+
+.stockGrid {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: auto auto auto;
+    background-color: rgb(233, 240, 241);
+}
+
+.stockCell {
+    background-color: rgb(181, 169, 209);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 20px;
+    font-size: 12px;
+    text-align: left;
+}
+
+#regionalNews {
+    width: fit-content;
+}
+
+.news {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    height: 70px;
+    background-color: rgb(233, 240, 241);
+    border: 1px solid red;
+    margin: 10px 0px 0px 0px;
+}
+
+.newsContent {
+    margin: 0px 0px 0px 20px;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.stockTable {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+
+/* STOCK PREDICTION TABLE*/
+
+.divTable {
+    display: table;
+    width: 100%;
+}
+
+.divTableRow {
+    display: table-row;
+}
+
+.divTableCell,
+.divTableHead {
+    border: 1px solid #999999;
+    display: table-cell;
+    padding: 3px 10px;
+}
+
+.divTableHeading {
+    background-color: #EEE;
+    display: table-header-group;
+    font-weight: bold;
+}
+
+.divTableBody {
+    display: table-row-group;
+}

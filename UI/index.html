@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOCK PRICE PREDICTOR</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="header">STOCK MARKET PREDICTION</h1>
+
+
+        <div class="searchBar">
+            <input type="text"> <input type="button" value="">
+        </div>
+
+        <div id="page1" class="flex">
+            <div id="stockPredictionGrid">
+                <h1>Stock prediction Grid</h1>
+                <div class="stockGrid">
+                    <div class="stockCell">
+                        <span> &#x25B2</span>
+                        <span class="companyIndex">TDWL</span>
+                        <div class="gridRate">6828
+                            <span class="priceChange">(-0.16%)</span>
+                        </div>
+                        <span class="gridTurnover">5,301,760,996</span>
+                    </div>
+                    <div class="stockCell">
+                        <span> &#x25B2</span>
+                        <span class="companyIndex">TDWL</span>
+                        <div class="gridRate">6828
+                            <span class="priceChange">(-0.16%)</span>
+                        </div>
+                        <span class="gridTurnover">5,301,760,996</span>
+                    </div>
+                    <div class="stockCell">
+                        <span> &#x25B2</span>
+                        <span class="companyIndex">TDWL</span>
+                        <div class="gridRate">6828
+                            <span class="priceChange">(-0.16%)</span>
+                        </div>
+                        <span class="gridTurnover">5,301,760,996</span>
+                    </div>
+                    <div class="stockCell">
+                        <span> &#x25B2</span>
+                        <span class="companyIndex">TDWL</span>
+                        <div class="gridRate">6828
+                            <span class="priceChange">(-0.16%)</span>
+                        </div>
+                        <span class="gridTurnover">5,301,760,996</span>
+                    </div>
+                    <div class="stockCell">
+                        <span> &#x25B2</span>
+                        <span class="companyIndex">TDWL</span>
+                        <div class="gridRate">6828
+                            <span class="priceChange">(-0.16%)</span>
+                        </div>
+                        <span class="gridTurnover">5,301,760,996</span>
+                    </div>
+                    <div class="stockCell">
+                        <span> &#x25B2</span>
+                        <span class="companyIndex">TDWL</span>
+                        <div class="gridRate">6828
+                            <span class="priceChange">(-0.16%)</span>
+                        </div>
+                        <span class="gridTurnover">5,301,760,996</span>
+                    </div>
+                    <div class="stockCell">
+                        <span> &#x25B2</span>
+                        <span class="companyIndex">TDWL</span>
+                        <div class="gridRate">6828
+                            <span class="priceChange">(-0.16%)</span>
+                        </div>
+                        <span class="gridTurnover">5,301,760,996</span>
+                    </div>
+                    <div class="stockCell">
+                        <span> &#x25B2</span>
+                        <span class="companyIndex">TDWL</span>
+                        <div class="gridRate">6828
+                            <span class="priceChange">(-0.16%)</span>
+                        </div>
+                        <span class="gridTurnover">5,301,760,996</span>
+                    </div>
+                    <div class="stockCell">
+                        <span> &#x25B2</span>
+                        <span class="companyIndex">TDWL</span>
+                        <div class="gridRate">6828
+                            <span class="priceChange">(-0.16%)</span>
+                        </div>
+                        <span class="gridTurnover">5,301,760,996</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="regionalNews">
+                <h1>REGIONAL NEWS</h1>
+                <div class="newsRow">
+                    <div class="news">
+                        <img class="newsImage" src="assets/images/news1.jpg" alt="" srcset="">
+                        <p class="newsContent">
+                            Saudi Arabia’s largest private medical provider see 21.3% rise in in...
+                            <span>readmore </span>
+                        </p>
+                    </div>
+                    <div class="news">
+                        <img class="newsImage" src="assets/images/news1.jpg" alt="" srcset="">
+                        <p class="newsContent">
+                            Saudi Arabia’s largest private medical provider see 21.3% rise in in...
+                            <span>readmore </span>
+                        </p>
+                    </div>
+                    <div class="news">
+                        <img class="newsImage" src="assets/images/news1.jpg" alt="" srcset="">
+                        <p class="newsContent">
+                            Saudi Arabia’s largest private medical provider see 21.3% rise in in...
+                            <span>readmore </span>
+                        </p>
+                    </div>
+                    <div class="news">
+                        <img class="newsImage" src="assets/images/news1.jpg" alt="" srcset="">
+                        <p class="newsContent">
+                            Saudi Arabia’s largest private medical provider see 21.3% rise in in...
+                            <span>readmore </span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div id="stockTableContainer">
+                <h1>STOCK TABLE </h1>
+                <div class="tab">
+                    <button class="tablink" onclick="showStockTable(event, 'mostActive')">Most Active</button>
+                    <button class="tablink" onclick="showStockTable(event, 'topGainers')">Top Gainers</button>
+                    <button class="tablink" onclick="showStockTable(event, 'topLosers')">Top Losers</button>
+                </div>
+
+                <div class="stockTable divTable greyGridTable" id="mostActive">
+                    <div class="divTableHeading">
+                        <div class="divTableRow">
+                            <div class="divTableHead">Company</div>
+                            <div class="divTableHead">Price</div>
+                            <div class="divTableHead">Change(%)</div>
+                            <div class="divTableHead">Turnover(USD)</div>
+                        </div>
+                    </div>
+                    <div class="divTableBody">
+
+                        <div class="divTableRow">
+                            <div class="divTableCell">SARCO</div>
+                            <div class="divTableCell">168.60</div>
+                            <div class="divTableCell">0.36</div>
+                            <div class="divTableCell">267,887,533</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">ALRAJHI</div>
+                            <div class="divTableCell">87.90</div>
+                            <div class="divTableCell">4.02</div>
+                            <div class="divTableCell">213,349,049</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">SARCO</div>
+                            <div class="divTableCell">168.60</div>
+                            <div class="divTableCell">0.36</div>
+                            <div class="divTableCell">267,887,533</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">ALRAJHI</div>
+                            <div class="divTableCell">87.90</div>
+                            <div class="divTableCell">4.02</div>
+                            <div class="divTableCell">213,349,049</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="stockTable divTable greyGridTable" id="topGainers">
+
+                    <div class="divTableHeading">
+                        <div class="divTableRow">
+                            <div class="divTableHead">Company</div>
+                            <div class="divTableHead">Price</div>
+                            <div class="divTableHead">Change(%)</div>
+                            <div class="divTableHead">Turnover(USD)</div>
+                        </div>
+                    </div>
+                    <div class="divTableBody">
+                        <div class="divTableRow">
+                            <div class="divTableCell">ALRAJHI</div>
+                            <div class="divTableCell">87.90</div>
+                            <div class="divTableCell">4.02</div>
+                            <div class="divTableCell">213,349,049</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">SARCO</div>
+                            <div class="divTableCell">168.60</div>
+                            <div class="divTableCell">0.36</div>
+                            <div class="divTableCell">267,887,533</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">ALRAJHI</div>
+                            <div class="divTableCell">87.90</div>
+                            <div class="divTableCell">4.02</div>
+                            <div class="divTableCell">213,349,049</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stockTable divTable greyGridTable" id="topLosers">
+
+                    <div class="divTableHeading">
+                        <div class="divTableRow">
+                            <div class="divTableHead">Company</div>
+                            <div class="divTableHead">Price</div>
+                            <div class="divTableHead">Change(%)</div>
+                            <div class="divTableHead">Turnover(USD)</div>
+                        </div>
+                    </div>
+
+                    <div class="divTableBody">
+                        <div class="divTableRow">
+                            <div class="divTableCell">ALRAJHI</div>
+                            <div class="divTableCell">87.90</div>
+                            <div class="divTableCell">4.02</div>
+                            <div class="divTableCell">213,349,049</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            document.getElementsByClassName("tablink")[0].click();
+
+            function showStockTable(evt, type) {
+                var i, stockTable, tablink;
+                stockTables = document.getElementsByClassName("stockTable");
+                tablinks = document.getElementsByClassName("tablink");
+                for (i = 0; i < stockTables.length; i++) {
+                    stockTables[i].style.display = "none";
+                }
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(type).style.display = "block";
+                evt.currentTarget.className = evt.currentTarget.className + " active"
+            }
+        </script>
+        <script src="assets/js/app.js"></script>
+</body>
+
+</html>
