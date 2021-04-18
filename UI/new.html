@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+
+
+    <link href="/static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Nav 2</a>
+
+            </div>
+        </div>
+    </nav>
+    <div style="background-color:snow;height: 100px;">
+        <h2 style="padding-top: 25px;padding-bottom: 25px;text-align: center;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Company Name Here</h2>
+    </div>
+    <div>
+        <div class="row" style="padding-top: 50px;padding-bottom: 50px;">
+
+            <div class="col-1"></div>
+            <div class="col-5" style="background-image: url(/static/assets/img/gallery/new.jpg);">
+
+            </div>
+            <div class="col-5">
+                <div class="card bg-light mb-3 " >
+
+                    <div class="card-body" style=" box-shadow: 15px 15px 15px -8px silver;">
+                        <!-- <h5 class="card-title">Title...</h5> -->
+
+                        <form method="post" action={{url_for('predict')}}>
+
+                            <div class="form-group">
+                                <label for="op">Open Price</label>
+                                <input type="text" class="form-control" id="open" name="ph1" value=""
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="hp">High Price</label>
+                                <input type="text" class="form-control" id="high" name="ph2" value=""
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lp">Low Price</label>
+                                <input type="text" class="form-control" id="low"  name="ph3" value=""
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="v">Volume</label>
+                                <input type="text" class="form-control" id="volume" name="ph4" value="" required>
+                            </div>
+
+                            <button type="submit" id="submit" class="btn btn-primary" value="Predict"> Predict</button>
+                        </form>
+
+                        <form method="post" action={{url_for('predict')}}>
+  <label for="op">Enter open price: </label><br>
+  <input type="text" id="open" name="ph1" value=""><br>
+
+    <label for="hi">Enter high price: </label><br>
+  <input type="text" id="high" name="ph2" value=""><br>
+
+      <label for="lo">Enter low price: </label><br>
+  <input type="text" id="low" name="ph3" value=""><br>
+
+      <label for="vol">Enter volume: </label><br>
+  <input type="text" id="volume" name="ph4" value=""><br>
+
+{#        <label for="fname">Enter news topic here: </label><br>#}
+{#  <input type="text" id="news" name="ph" value="NewsTopic"><br>#}
+
+{#  <input type="submit" value="find sentiment">#}
+
+  <input type="submit" value="Predict">
+</form>
+                    </div>
+                </div>
+{#                <div class="card bg-light mb-3" style="max-width: 18rem;">#}
+
+{#                    <div class="card-body" style=" box-shadow: 15px 15px 15px -8px silver;">#}
+                        <p>today closing price is {%print(data1)%} </p>
+{#                         <p>today closing price is data1 </p>#}
+{#                    </div>#}
+
+{#                    <div class="card-body" style=" box-shadow: 15px 15px 15px -8px silver;">#}
+                        <p>today closing price is {%print(data2)%} </p>
+{#                         <p>today closing price is data1 </p>#}
+{#                    </div>#}
+{#                </div>#}
+
+            </div>
+
+            <div class="col-1"></div>
+
+        </div>
+        <div style="padding-bottom: 50px;padding-top: 50px;background-color:snow;">
+            <div class="row " style="padding-bottom: 50px;">
+                <div class="col-1">
+                </div>
+                <div class="col-9" >
+                    <h3 style="text-align: left;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">NEWS</h3>
+                </div>
+                <div class="col-2">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                </div>
+                <div class="col-9">
+                    <div class="card mb-3" style="max-height: 150px;border:none; box-shadow: 5px 5px 5px -4px silver;">
+                        <div class="row no-gutters">
+                            <div class="col-4">
+                                <img src="static/assets/img/gallery/gallery-6.jpg" class="card-img" alt="..." style="max-height: 150px;" >
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">News title</h5>
+                                    <p class="card-text">Summary................here</p>
+                                    <a href="index.html" class="card-text"><small class="text-muted">Read
+                                            More</small></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-2">
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-1">
+                </div>
+                <div class="col-9">
+                    <div class="card mb-3" style="max-height: 150px;border:none; box-shadow: 5px 5px 5px -4px silver;">
+                        <div class="row no-gutters">
+                            <div class="col-4">
+                                <img src="static/assets/img/gallery/gallery-6.jpg" class="card-img" alt="..." style="max-height: 150px;" >
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">News title</h5>
+                                    <p class="card-text">Summary................here</p>
+                                    <a href="index.html" class="card-text"><small class="text-muted">Read
+                                            More</small></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-2">
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-1">
+                </div>
+                <div class="col-9">
+                    <div class="card mb-3" style="max-height: 150px;border:none; box-shadow: 5px 5px 5px -4px silver;">
+                        <div class="row no-gutters">
+                            <div class="col-4">
+                                <img src="static/assets/img/gallery/gallery-6.jpg" class="card-img" alt="..." style="max-height: 150px;" >
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">News title</h5>
+                                    <p class="card-text">Summary................here</p>
+                                    <a href="index.html" class="card-text"><small class="text-muted">Read
+                                            More</small></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-2">
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Vendor JS Files -->
+    <script src="static/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+</body>
+
+</html>

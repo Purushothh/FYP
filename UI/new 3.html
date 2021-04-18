@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+
+
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+
+
+        input[type=submit]:hover {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Nav 2</a>
+
+            </div>
+        </div>
+    </nav>
+    <div style="background-color:snow;height: 100px;">
+        <h2
+            style="padding-top: 25px;padding-bottom: 25px;text-align: center;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+            Company Name Here</h2>
+    </div>
+    <div>
+        <div class="row" style="padding-top: 50px;padding-bottom: 50px;">
+
+            <div class="col-1"></div>
+            <div class="col-5" style="background-image: url(assets/img/gallery/new.jpg);">
+
+            </div>
+            <div class="col-5">
+                <div class="card bg-light mb-3 ">
+
+                    <div class="card-body" style=" box-shadow: 15px 15px 15px -8px silver;">
+                        <!-- <h5 class="card-title">Title...</h5> -->
+                        <form>
+
+                            <div>
+                                <label for="op">Open Price</label>
+                                <input type="text" id="op" placeholder="Enter Open Price" pattern="^\d+\.{0,1}\d*$"
+                                    title="Please input a valid amount" required>
+                            </div>
+                            <div>
+                                <label for="hp">High Price</label>
+                                <input type="text" id="hp" placeholder="Enter High Price" required>
+                            </div>
+                            <div>
+                                <label for="lp">Low Price</label>
+                                <input type="text" id="lp" placeholder="Enter Low Price" step="any" required>
+                            </div>
+                            <div>
+                                <label for="v">Volume</label>
+                                <input type="text" id="v" placeholder="Enter Volume" required>
+                            </div>
+
+                            <button type="submit" id="submit" class="btn btn-primary">Predict</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="card bg-light mb-3" style="max-width: 18rem;">
+
+                    <div class="card-body" style=" box-shadow: 15px 15px 15px -8px silver;">
+                        Result
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-1"></div>
+
+        </div>
+        <!-- *************latest changes********************* -->
+        <div style="padding-bottom: 50px;padding-top: 50px;background-color:snow;">
+            <div class="row">
+                <div class="col-1">
+                </div>
+                <div class="col-10">
+                    <div class="row " style="padding-bottom: 20px;">
+
+                        <div class="col-12">
+                            <h3
+                                style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                                Positive News</h3>
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-12">
+                            <div class="card-deck">
+                                <div class="card" style="border:none">
+                                    <img class="card-img-top" src="assets/img/gallery/gallery-6.jpg" alt="image">
+                                    <div class="card-body">
+                                        <h6 class="card-title text-muted">Business</h6>
+                                        <h5 class="card-text">Apple shares surges</h5>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card" style="border:none">
+                                    <img class="card-img-top" src="assets/img/gallery/gallery-6.jpg" alt="image">
+                                    <div class="card-body">
+                                        <h6 class="card-title text-muted">Business</h6>
+                                        <h5 class="card-text">Apple shares surges</h5>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card" style="border:none">
+                                    <img class="card-img-top" src="assets/img/gallery/gallery-6.jpg" alt="image">
+                                    <div class="card-body">
+                                        <h6 class="card-title text-muted">Business</h6>
+                                        <h5 class="card-text">Apple shares surges</h5>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card" style="border:none">
+                                    <img class="card-img-top" src="assets/img/gallery/gallery-6.jpg" alt="image">
+                                    <div class="card-body">
+                                        <h6 class="card-title text-muted">Business</h6>
+                                        <h5 class="card-text">Apple shares surges</h5>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                    
+                    <hr />
+
+                    <div class="row " style="padding-bottom: 20px;">
+
+                        <div class="col-12">
+                            <h3
+                                style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                                Negative News</h3>
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-12">
+                            <div class="card-deck">
+                                <div class="card" style="border:none">
+                                    <img class="card-img-top" src="assets/img/gallery/gallery-6.jpg" alt="image">
+                                    <div class="card-body">
+                                        <h6 class="card-title text-muted">Business</h6>
+                                        <h5 class="card-text">Apple shares drops</h5>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card" style="border:none">
+                                    <img class="card-img-top" src="assets/img/gallery/gallery-6.jpg" alt="image">
+                                    <div class="card-body">
+                                        <h6 class="card-title text-muted">Business</h6>
+                                        <h5 class="card-text">Apple shares drops</h5>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card" style="border:none">
+                                    <img class="card-img-top" src="assets/img/gallery/gallery-6.jpg" alt="image">
+                                    <div class="card-body">
+                                        <h6 class="card-title text-muted">Business</h6>
+                                        <h5 class="card-text">Apple shares drops</h5>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card" style="border:none">
+                                    <img class="card-img-top" src="assets/img/gallery/gallery-6.jpg" alt="image">
+                                    <div class="card-body">
+                                        <h6 class="card-title text-muted">Business</h6>
+                                        <h5 class="card-text">Apple shares drops</h5>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1">
+                </div>
+            </div>
+
+
+
+        </div>
+ <!-- *************latest changes********************* -->
+    </div>
+
+
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+</body>
+
+</html>
