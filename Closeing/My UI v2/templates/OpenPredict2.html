@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DWJA</title>
+</head>
+<body>
+<h1>predict DWJA close price</h1>
+<form method="post" action={{url_for('predict2')}}>
+  <label for="op">Enter open price: </label><br>
+  <input type="text" id="open" name="ph1" value=""><br>
+
+    <label for="hi">Enter high price: </label><br>
+  <input type="text" id="high" name="ph2" value=""><br>
+
+      <label for="lo">Enter low price: </label><br>
+  <input type="text" id="low" name="ph3" value=""><br>
+
+      <label for="vol">Enter volume: </label><br>
+  <input type="text" id="volume" name="ph4" value=""><br>
+
+        <label for="fname">Enter news topic here: </label><br>
+  <input type="text" id="news" name="ph" value="NewsTopic"><br>
+{##}
+  <input type="submit" value="find sentiment">
+
+  <input type="submit" value="Predict">
+</form>
+
+
+<p>today closing price is {%print(data)%} </p>
+<p>tomorrow closing price is {%print(data1)%} </p>
+
+</body>
+</html>
